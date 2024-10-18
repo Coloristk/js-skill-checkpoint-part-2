@@ -12,3 +12,8 @@ const techcoolPeople = [
 const allPeople = [];
 
 // เริ่มเขียนโค้ดตรงนี้
+const techupMember = [...techupPeople, ...techcoolPeople].filter(
+  (member) => member.age < 20
+);
+allPeople.push(...techupMember);
+console.log(allPeople);
